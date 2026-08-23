@@ -17,3 +17,4 @@
 وایرفریم‌ها:
 
 - [صفحه ورود](docs/wireframes/login-fa.md)
+- [داشبورد](docs/wireframes/dashboard-fa.md)
