@@ -19,3 +19,4 @@
 - [صفحه ورود](docs/wireframes/login-fa.md)
 - [داشبورد](docs/wireframes/dashboard-fa.md)
 - [فهرست محصولات](docs/wireframes/products-list-fa.md)
+- [فرم ایجاد و ویرایش محصول](docs/wireframes/product-form-fa.md)
