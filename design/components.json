@@ -1,0 +1,45 @@
+{
+  "button": {
+    "height": {
+      "small": "36px",
+      "medium": "44px",
+      "large": "52px"
+    },
+    "paddingInline": {
+      "small": "12px",
+      "medium": "16px",
+      "large": "20px"
+    },
+    "gap": "8px",
+    "iconSize": "18px",
+    "iconOnlySize": "40px",
+    "radius": "8px"
+  },
+  "field": {
+    "height": "44px",
+    "paddingInline": "12px",
+    "labelGap": "8px",
+    "messageGap": "6px",
+    "borderWidth": "1px",
+    "radius": "8px"
+  },
+  "badge": {
+    "minHeight": "28px",
+    "paddingInline": "10px",
+    "gap": "6px",
+    "fontSize": "12px",
+    "fontWeight": 500,
+    "radius": "999px"
+  },
+  "card": {
+    "padding": "24px",
+    "paddingCompact": "16px",
+    "gap": "16px",
+    "borderWidth": "1px",
+    "radius": "12px"
+  },
+  "focusRing": {
+    "width": "2px",
+    "offset": "2px"
+  }
+}

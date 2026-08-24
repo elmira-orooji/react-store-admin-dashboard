@@ -27,3 +27,5 @@
 
 - [هویت بصری و Design System اولیه](docs/design-system-foundations-fa.md)
 - [Design Tokens](design/tokens.json)
+- [مشخصات کامپوننت‌های پایه](docs/base-components-fa.md)
+- [Component Tokens](design/components.json)
