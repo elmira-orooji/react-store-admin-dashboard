@@ -1,0 +1,65 @@
+import type { HomeCategory, OfferProduct } from './types';
+
+export const homeCategories: readonly HomeCategory[] = [
+    { id: 'digital', title: 'کالای دیجیتال', icon: 'digital', tone: 'sky' },
+    { id: 'home-kitchen', title: 'خانه و آشپزخانه', icon: 'home', tone: 'mint' },
+    { id: 'fashion', title: 'مد و پوشاک', icon: 'fashion', tone: 'coral' },
+    { id: 'beauty', title: 'زیبایی و سلامت', icon: 'beauty', tone: 'sand' },
+    { id: 'sport', title: 'ورزش و سفر', icon: 'sport', tone: 'sky' },
+    { id: 'kids', title: 'کودک و سرگرمی', icon: 'baby', tone: 'coral' },
+    { id: 'books', title: 'کتاب و هنر', icon: 'book', tone: 'mint' },
+    { id: 'supermarket', title: 'سوپرمارکت', icon: 'supermarket', tone: 'sand' },
+];
+
+export const offerProducts: readonly OfferProduct[] = [
+    {
+        id: 'nova-air-2',
+        title: 'هدفون بی‌سیم نوا مدل Air 2',
+        price: 2_796_500,
+        originalPrice: 3_290_000,
+        discount: 15,
+        rating: 4.6,
+        artwork: 'headphones',
+        tone: 'sky',
+    },
+    {
+        id: 'nova-fit-mini',
+        title: 'ساعت هوشمند نوا مدل Fit Mini',
+        price: 1_960_000,
+        originalPrice: 2_450_000,
+        discount: 20,
+        rating: 4.4,
+        artwork: 'watch',
+        tone: 'mint',
+    },
+    {
+        id: 'homia-travel-mug',
+        title: 'ماگ سفری دوجداره هومیا',
+        price: 712_000,
+        originalPrice: 890_000,
+        discount: 20,
+        rating: 4.8,
+        artwork: 'mug',
+        tone: 'sand',
+    },
+    {
+        id: 'rio-everyday-shoe',
+        title: 'کفش روزمره ریو مدل City',
+        price: 1_744_000,
+        originalPrice: 2_180_000,
+        discount: 20,
+        rating: 4.5,
+        artwork: 'shoe',
+        tone: 'coral',
+    },
+    {
+        id: 'luna-hydra-serum',
+        title: 'سرم آبرسان پوست لونا',
+        price: 624_000,
+        originalPrice: 780_000,
+        discount: 20,
+        rating: 4.7,
+        artwork: 'serum',
+        tone: 'mint',
+    },
+];

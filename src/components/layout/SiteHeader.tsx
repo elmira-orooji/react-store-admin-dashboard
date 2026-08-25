@@ -124,7 +124,7 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ cartCount, onSearch }) =
                                     </div>
                                 )}
                             </div>
-                            <a href="#offers">پیشنهادهای امروز</a>
+                            <a href="#special-offers">پیشنهادهای امروز</a>
                             <a href="#best-sellers">پرفروش‌ترین‌ها</a>
                             <a href="#new-products">تازه‌ها</a>
                         </nav>
@@ -153,4 +153,3 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ cartCount, onSearch }) =
 };
 
 export default SiteHeader;
-
