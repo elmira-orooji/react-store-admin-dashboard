@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "name": "Vitrino Storefront",
+    "direction": "rtl",
+    "defaultTheme": "light"
+  },
+  "color": {
+    "light": {
+      "background": "#F5F5F7",
+      "surface": "#FFFFFF",
+      "surfaceSubtle": "#F0F1F3",
+      "surfaceRaised": "#FFFFFF",
+      "text": "#202124",
+      "textMuted": "#62666D",
+      "textSubtle": "#81858C",
+      "border": "#E0E2E6",
+      "borderStrong": "#C7CAD0",
+      "primary": "#D93654",
+      "primaryHover": "#C62E4A",
+      "primarySubtle": "#FFE6EB",
+      "primarySoft": "#FFF3F5",
+      "secondary": "#007A78",
+      "secondarySubtle": "#DDF5F3",
+      "success": "#237A4B",
+      "successSubtle": "#E5F5EC",
+      "warning": "#9A5A00",
+      "warningSubtle": "#FFF1D6",
+      "danger": "#B42318",
+      "dangerSubtle": "#FDE7E5",
+      "info": "#2864B8",
+      "infoSubtle": "#E5F0FF"
+    },
+    "dark": {
+      "background": "#151619",
+      "surface": "#202226",
+      "surfaceSubtle": "#2A2C31",
+      "surfaceRaised": "#26282D",
+      "text": "#F2F3F5",
+      "textMuted": "#BABDC4",
+      "textSubtle": "#9498A1",
+      "border": "#3B3E45",
+      "borderStrong": "#555962",
+      "primary": "#FF7A8F",
+      "primaryHover": "#FF97A7",
+      "primarySubtle": "#582936",
+      "primarySoft": "#321D23",
+      "secondary": "#58C9C5",
+      "secondarySubtle": "#174746",
+      "success": "#68C991",
+      "successSubtle": "#1E4932",
+      "warning": "#F1B458",
+      "warningSubtle": "#513A18",
+      "danger": "#FF8D85",
+      "dangerSubtle": "#5A2926",
+      "info": "#7CB4FF",
+      "infoSubtle": "#203F69"
+    }
+  },
+  "typography": {
+    "fontFamily": "Vazirmatn, Tahoma, Arial, sans-serif",
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500,
+      "bold": 700
+    },
+    "fontSize": {
+      "caption": "12px",
+      "body": "14px",
+      "productName": "14px",
+      "titleSmall": "16px",
+      "price": "16px",
+      "titleSection": "20px",
+      "titlePage": "24px"
+    },
+    "lineHeight": {
+      "caption": "20px",
+      "body": "22px",
+      "titleSmall": "26px",
+      "titleSection": "32px",
+      "titlePage": "36px"
+    }
+  },
+  "space": {
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "10": "40px",
+    "12": "48px",
+    "16": "64px"
+  },
+  "radius": {
+    "control": "8px",
+    "search": "12px",
+    "card": "12px",
+    "banner": "16px",
+    "feature": "20px",
+    "round": "999px"
+  },
+  "size": {
+    "control": "44px",
+    "searchDesktop": "48px",
+    "searchMobile": "44px",
+    "bottomNavigation": "64px",
+    "touchTarget": "44px",
+    "contentMax": "1440px",
+    "productCardMin": "200px"
+  },
+  "motion": {
+    "fast": "120ms",
+    "normal": "180ms",
+    "drawer": "240ms",
+    "easing": "cubic-bezier(0.2, 0, 0, 1)"
+  }
+}

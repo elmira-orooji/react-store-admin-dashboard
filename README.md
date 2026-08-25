@@ -6,7 +6,7 @@
 
 - تعریف MVP فروشگاه و نیازمندی‌های UX — انجام شد
 - معماری اطلاعات و جریان خرید — انجام شد
-- بازطراحی هویت بصری فروشگاه — در انتظار
+- بازطراحی هویت بصری فروشگاه — انجام شد
 - طراحی UI صفحه خانه و موبایل — در انتظار
 - راه‌اندازی React و پیاده‌سازی — در انتظار
 
@@ -38,9 +38,11 @@
 
 ## Design System
 
+- [Design System فروشگاه](docs/storefront/design-system-fa.md)
+- [Storefront Tokens](design/storefront-tokens.json)
 - [پایه‌های فعلی](docs/design-system-foundations-fa.md)
 - [کامپوننت‌های پایه](docs/base-components-fa.md)
 - [Design Tokens](design/tokens.json)
 - [Component Tokens](design/components.json)
 
-توکن‌های فعلی در مرحله بعد متناسب با هویت فروشگاهی بازنگری می‌شوند.
+توکن‌های عمومی قبلی برای پنل مدیریت حفظ شده‌اند. پیاده‌سازی storefront از فایل `storefront-tokens.json` استفاده می‌کند.
