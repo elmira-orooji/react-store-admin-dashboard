@@ -1,0 +1,41 @@
+import { Grid2X2, House, ShoppingCart, UserRound } from 'lucide-react';
+
+interface MobileNavigationProps {
+    /** Current number of products in the cart. */
+    cartCount: number;
+}
+
+const navigationItems = [
+    { label: 'خانه', href: '#home', icon: House, isCurrent: true },
+    { label: 'دسته‌بندی', href: '#categories', icon: Grid2X2, isCurrent: false },
+    { label: 'سبد خرید', href: '#cart', icon: ShoppingCart, isCurrent: false },
+    { label: 'حساب من', href: '#account', icon: UserRound, isCurrent: false },
+] as const;
+
+export const MobileNavigation: React.FC<MobileNavigationProps> = ({ cartCount }) => {
+    return (
+        <nav className="mobile-navigation" aria-label="ناوبری موبایل">
+            {navigationItems.map(({ label, href, icon: Icon, isCurrent }) => (
+                <a
+                    className="mobile-navigation__item"
+                    href={href}
+                    aria-current={isCurrent ? 'page' : undefined}
+                    key={label}
+                >
+                    <span className="mobile-navigation__icon">
+                        <Icon aria-hidden="true" size={22} strokeWidth={isCurrent ? 2.2 : 1.7} />
+                        {label === 'سبد خرید' && cartCount > 0 && (
+                            <span className="mobile-navigation__count">
+                                {cartCount.toLocaleString('fa-IR')}
+                            </span>
+                        )}
+                    </span>
+                    <span>{label}</span>
+                </a>
+            ))}
+        </nav>
+    );
+};
+
+export default MobileNavigation;
+
