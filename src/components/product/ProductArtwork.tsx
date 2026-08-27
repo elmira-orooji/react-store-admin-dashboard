@@ -1,4 +1,4 @@
-import type { ProductArtworkKind } from '../types';
+import type { ProductArtworkKind, ProductTone } from '~types/product';
 
 interface ProductArtworkProps {
     /** Product name used as the accessible image label. */
@@ -6,7 +6,7 @@ interface ProductArtworkProps {
     /** Artwork variant that represents the product. */
     kind: ProductArtworkKind;
     /** Background color treatment. */
-    tone: 'coral' | 'mint' | 'sand' | 'sky';
+    tone: ProductTone;
 }
 
 export const ProductArtwork: React.FC<ProductArtworkProps> = ({ label, kind, tone }) => {

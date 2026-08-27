@@ -20,12 +20,12 @@ interface SiteHeaderProps {
 }
 
 const categories = [
-    'کالای دیجیتال',
-    'خانه و آشپزخانه',
-    'مد و پوشاک',
-    'زیبایی و سلامت',
-    'ورزش و سفر',
-    'کتاب و هنر',
+    { id: 'digital', title: 'کالای دیجیتال' },
+    { id: 'home-kitchen', title: 'خانه و آشپزخانه' },
+    { id: 'fashion', title: 'مد و پوشاک' },
+    { id: 'beauty', title: 'زیبایی و سلامت' },
+    { id: 'sport', title: 'ورزش و سفر' },
+    { id: 'books', title: 'کتاب و هنر' },
 ] as const;
 
 export const SiteHeader: React.FC<SiteHeaderProps> = ({ cartCount, onSearch }) => {
@@ -114,9 +114,9 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ cartCount, onSearch }) =
                                         <p>دسته‌های پرطرفدار</p>
                                         <ul>
                                             {categories.map((category) => (
-                                                <li key={category}>
-                                                    <a href="#categories" onClick={closeCategoryMenu}>
-                                                        {category}
+                                                <li key={category.id}>
+                                                    <a href={`#products?category=${category.id}`} onClick={closeCategoryMenu}>
+                                                        {category.title}
                                                     </a>
                                                 </li>
                                             ))}
@@ -125,8 +125,8 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ cartCount, onSearch }) =
                                 )}
                             </div>
                             <a href="#special-offers">پیشنهادهای امروز</a>
-                            <a href="#best-sellers">پرفروش‌ترین‌ها</a>
-                            <a href="#new-products">تازه‌ها</a>
+                            <a href="#products">پرفروش‌ترین‌ها</a>
+                            <a href="#products">تازه‌ها</a>
                         </nav>
                         <button className="location-action" type="button">
                             <MapPin aria-hidden="true" size={17} strokeWidth={1.8} />

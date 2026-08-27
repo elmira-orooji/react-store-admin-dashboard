@@ -1,59 +1,14 @@
-import { ChevronLeft, ChevronRight, Clock3, Plus, Star } from 'lucide-react';
-import { memo, useCallback, useRef } from 'react';
+import { ChevronLeft, ChevronRight, Clock3 } from 'lucide-react';
+import { useCallback, useRef } from 'react';
+
+import ProductCard from '~components/product/ProductCard';
 
 import { offerProducts } from '../data';
-import type { OfferProduct } from '../types';
-import ProductArtwork from './ProductArtwork';
-
-interface ProductCardProps {
-    /** Product data rendered by the card. */
-    product: OfferProduct;
-    /** Adds one unit of the product to the cart. */
-    onAddToCart: (productName: string) => void;
-}
 
 interface SpecialOffersProps {
     /** Adds one unit of a selected offer to the cart. */
     onAddToCart: (productName: string) => void;
 }
-
-const priceFormatter = new Intl.NumberFormat('fa-IR');
-
-const ProductCard = memo<ProductCardProps>(function ProductCard({ product, onAddToCart }) {
-    const handleAdd = useCallback((): void => {
-        onAddToCart(product.title);
-    }, [onAddToCart, product.title]);
-
-    return (
-        <article className="offer-card">
-            <a
-                className="offer-card__link"
-                href={`#product-${product.id}`}
-                aria-label={product.title}
-            >
-                <ProductArtwork label={product.title} kind={product.artwork} tone={product.tone} />
-                <h3>{product.title}</h3>
-            </a>
-            <div className="offer-card__rating" aria-label={`امتیاز ${product.rating.toLocaleString('fa-IR')} از ۵`}>
-                <Star aria-hidden="true" size={14} fill="currentColor" />
-                <span>{product.rating.toLocaleString('fa-IR')}</span>
-            </div>
-            <div className="offer-card__pricing">
-                <span className="offer-card__discount">{product.discount.toLocaleString('fa-IR')}٪</span>
-                <strong aria-label={`${priceFormatter.format(product.price)} تومان`}>
-                    {priceFormatter.format(product.price)}
-                    <small>تومان</small>
-                </strong>
-                <del aria-label={`قیمت قبلی ${priceFormatter.format(product.originalPrice)} تومان`}>
-                    {priceFormatter.format(product.originalPrice)}
-                </del>
-            </div>
-            <button className="offer-card__add" type="button" onClick={handleAdd} aria-label={`افزودن ${product.title} به سبد خرید`}>
-                <Plus aria-hidden="true" size={18} />
-            </button>
-        </article>
-    );
-});
 
 export const SpecialOffers: React.FC<SpecialOffersProps> = ({ onAddToCart }) => {
     const scrollerRef = useRef<HTMLDivElement>(null);
@@ -83,13 +38,13 @@ export const SpecialOffers: React.FC<SpecialOffersProps> = ({ onAddToCart }) => 
                         <span>تا پایان امروز</span>
                         <bdi>۰۸ : ۲۴ : ۳۶</bdi>
                     </div>
-                    <a href="#all-offers">مشاهده همه</a>
+                    <a href="#products">مشاهده همه</a>
                 </div>
 
                 <div className="special-offers__body">
                     <div className="special-offers__rail" ref={scrollerRef} tabIndex={0} aria-label="فهرست پیشنهادهای ویژه">
                         {offerProducts.map((product) => (
-                            <ProductCard product={product} onAddToCart={onAddToCart} key={product.id} />
+                            <ProductCard product={product} variant="offer" onAddToCart={onAddToCart} key={product.id} />
                         ))}
                     </div>
                     <div className="special-offers__controls" aria-label="کنترل پیمایش پیشنهادها">

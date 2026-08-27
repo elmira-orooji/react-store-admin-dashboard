@@ -40,7 +40,7 @@ export const CategoryGrid: React.FC = () => {
                     const Icon = categoryIcons[category.icon];
 
                     return (
-                        <a className="category-tile" href={`#category-${category.id}`} key={category.id}>
+                        <a className="category-tile" href={`#products?category=${category.id}`} key={category.id}>
                             <span className={`category-tile__art category-tile__art--${category.tone}`}>
                                 <Icon aria-hidden="true" size={31} strokeWidth={1.6} />
                             </span>
